@@ -24,8 +24,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [repo](https://your-solution-url.com)
-- Live Site URL: [Live website](https://your-live-site-url.com)
+- Solution URL: [repo](https://github.com/fertisha/3-column-preview-card-component-main.git)
+- Live Site URL: [Live website](https://fertisha.github.io/3-column-preview-card-component-main/)
 
 ## My process
 
