@@ -1,0 +1,166 @@
+
+/*root has been used to make using the colors easeir*/
+:root {
+  --main-column: hsl(31, 77%, 52%);
+  --main-column-2: hsl(184, 100%, 22%);
+  --main-column-3: hsl(179, 100%, 13%);
+  --main-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --main-buttons: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--main-buttons);
+
+}
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--main-buttons);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--main-paragraphs);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.column-layout {
+  width: 800px;
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+  line-height: 2;
+}
+.column-1 {
+  background-color: var(--main-column);
+  flex: 1; /*all the flex:1 has been written so all the columns share the same size*/
+  padding: 20px 50px;
+  border-radius:20px 0 0 20px;
+
+}
+.image-sedan {
+  background-image: url("../images/icon-sedans.svg");
+  background-repeat: no-repeat;
+padding: 20px;
+}
+.button-sedan {
+  margin:60px auto 20px auto;
+}
+.column-2 {
+  background-color: var(--main-column-2);
+  flex: 1;
+  padding: 20px 50px;
+
+}
+.image-suvs {
+  background-image: url("../images/icon-suvs.svg");
+  background-repeat: no-repeat;
+padding: 20px; /*if the padding is not assigned the image will not be displayed fully*/
+}
+.button-suvs {
+  margin:60px auto 20px auto;
+}
+
+.column-3 {
+  background-color: var(--main-column-3);
+  flex: 1;
+  padding: 20px 50px;
+  border-radius: 0 20px 20px 0;
+}
+.image-luxury {
+  background-image: url("../images/icon-luxury.svg");
+background-repeat: no-repeat;
+padding: 20px;
+}
+.button-luxury {
+  margin:60px auto 20px auto;
+}
+.btn-1 { /*buttons were created with the help of this site: https://css3buttongenerator.com/*/
+  -webkit-border-radius: 44;
+  -moz-border-radius: 44;
+  border-radius: 44px;
+  font-family: Arial;
+  color: hsl(31, 77%, 52%);
+  font-size: 20px;
+  background: white;
+  padding: 11px 29px 14px 29px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.btn-1:hover {
+  background: hsl(31, 77%, 52%);
+  text-decoration:none;
+  color: white;
+  font-size: 12px;
+  border: solid #ffffff 2px;
+}
+.btn-2 {
+  -webkit-border-radius: 44;
+  -moz-border-radius: 44;
+  border-radius: 44px;
+  font-family: Arial;
+  color: var(--main-column-2);
+  font-size: 20px;
+  background: white;
+  padding: 11px 29px 14px 29px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.btn-2:hover {
+  background: var(--main-column-2);
+  text-decoration:none;
+  color: white;
+  font-size: 12px;
+  border: solid #ffffff 2px;
+}
+
+.btn-3 {
+  -webkit-border-radius: 44;
+  -moz-border-radius: 44;
+  border-radius: 44px;
+  font-family: Arial;
+  color: var(--main-column-3);
+  font-size: 20px;
+  background: white;
+  padding: 11px 29px 14px 29px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.btn-3:hover {
+  background: var(--main-column-3);
+  text-decoration:none;
+  color: white;
+  font-size: 12px;
+  border: solid #ffffff 2px;
+}
+
+.attribution {
+
+   font-size: 11px;
+text-align: center;
+position: relative; /*This position is written to push the footer at the bottom of page*/
+margin-top: 140px;
+ }
+.attribution a {
+  color: hsl(228, 45%, 44%); }
+
+/*CSS for mobile/responsive*/
+@media only screen and (max-width: 844px) {
+  .column-layout {
+    display: flex;
+    width: 90%; /*I have assigned 90% so there would be a margin like the design*/
+    overflow: scroll;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+    .column-1 {
+      border-radius: 20px 20px 0 0; /*The border radius should be different to above measures otherwise it will mess the design of mobile*/
+    }
+    .column-3 {
+      border-radius: 0 0 20px 20px;
+    }
+  }
